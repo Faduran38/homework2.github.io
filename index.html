@@ -79,6 +79,7 @@ Description: This is a patient registration form to collect information such as 
               <input type="date" id="birthdate" name="birthdate"
                 title="Please select the day you were born"
                 min="1906-03-25" max="2026-03-24" required>
+              <span id="dob_check"></span>
             </div>      
           </tr>
           <tr>
@@ -88,6 +89,7 @@ Description: This is a patient registration form to collect information such as 
                 <input type="password" id="ssn" name="ssn" pattern="\d{3}-\d{2}-\d{4}"
                   value="FakePSW"
                   title="Enter your SSN" required>
+                <span id="ssn_check"></span>
               </td>
             </div>
           </tr>
@@ -99,6 +101,7 @@ Description: This is a patient registration form to collect information such as 
             <input type="text" size="30"
               minlength="2" maxlength="30" id ="address1" name="address1"
               placeholder="Primary Address" required >
+            <span id="address_check"></span>
           </td>
           </tr>
           <tr class="form">
@@ -182,6 +185,7 @@ Description: This is a patient registration form to collect information such as 
               <label for="phone">Phone Number</label>
               <input type="text" size="30" maxlength="12"
                 id="cell_phone" name="cell_phone" placeholder="000-000-0000" required>
+              <span id="phone_check"></span>
             </td>
           </tr>
           <tr class="form"></tr>
