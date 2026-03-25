@@ -221,9 +221,10 @@ Description: This is a patient registration form to collect information such as 
               <label><input type="checkbox"
                        name="medical" value="flu">Flu</label>
             </div>
-            <label for="currentPain">What is the current pain you are feeling on the scale from 1-10?</label>
+            <label for="painRange">What is the current pain you are feeling on the scale from 1-10?</label>
             <input type="range" id="painRange" name="painRange"
               min="1" max="10" title="Please move the scale to how much pain you are currently in">
+            <span id="range_check"></span>
             <tr>
               <div id="pain">
                 <label for="comments">Please explain what you are experiencing...</label>
@@ -273,4 +274,12 @@ Description: This is a patient registration form to collect information such as 
         <script src="mis3371hw2.js"></script>
         <script>
           document.getElementById("today").innerHTML = new Date().toLocaleDateString();
+        </script>
+        <script>
+          var slider = document.getElementById("painRange");
+          var output = document.getElementById("range_check");
+          output.innerHTML = slider.value;
+          slider.oninput = function() {
+            output.innerHTML = this.value;
+          }
         </script>
