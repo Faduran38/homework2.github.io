@@ -86,8 +86,13 @@ Description: This is a patient registration form to collect information such as 
               <td><label for="ssn">SSN: </label></td>
               <td>
                 <input type="text" id="ssn" name="ssn" pattern="\d{3}-\d{2}-\d{4}"
-                  title="Enter your SSN"
+                  title="Enter your SSN">
               </td>
           </tr>
           
      </body>
+        <!-- Enter in Javascript -->
+        <script src="mis3371hw2.js"></script>
+        <script>
+          document.getElementById("today").innerHTML = new Date().toLocaleDateString();
+        </script>
