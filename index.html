@@ -163,8 +163,44 @@ Description: This is a patient registration form to collect information such as 
                 <option value="WY">Wyoming</option>
                 </select>
                 <label for="zip">Zipcode: </label>
-                <input type="text" pattern="[0-9]{10}" name="zip" placeholder="Zipcode">
+                <input type="text" pattern="[0-9]{10}" name="zip" placeholder="Zipcode"
+                 minlength="5" maxlength="10" required >
               </td>
+          </tr>
+         <tr>
+           <div id="gender">
+             <label for="gender">Gender: </label>
+             <label for="male">Male</label>
+             <label for="female">Female</label>
+             <input type="radio" name="gender" value="male" required>
+             <input type="radio" name="gender" value="female" required>
+           </div>
+         </tr> 
+        <div id="contactInformation">
+          <tr class="form">
+            <td align="right">
+              <label for="phone">Phone Number</label>
+              <input type="text" size="30" maxlength="12"
+                id="cell_phone" name="cell_phone" placeholder="000-000-0000" required>
+            </td>
+          </tr>
+          <tr class="form"></tr>
+          <td align="right">
+            <label for="email">Email: </label>
+          </td>
+          <td>
+            <input type="text" size="30" maxlength="35"
+              id="email" name="email" placeholder="name@domain.tld">
+          </td>
+        </div>
+          <tr>
+            <div id="shots">
+              <label>Do you have a vaccination?</label>
+              <div id="vaccinations" title="Have you recieved a vaccine before?">
+                <label><input type="radio" name="vaccinations" value="yes">Yes</label>
+                <label><input type="radio" name="vaccinations" value="no">No</label>
+              </div>
+            </div>
           </tr>
           
           
