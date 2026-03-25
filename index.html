@@ -58,7 +58,7 @@ Description: This is a patient registration form to collect information such as 
                       <li><label for="middleinitial">Middle Initial: </label></li>
                       <input type="text" size="30"
                         minlength="1" maxlength="1"
-                        pattern="[A-Za-z]{0,}"
+                        pattern="[A-Za-z]{1,}"
                         name="middleinitial"
                         placeholder="MI"
                         required>
@@ -236,6 +236,7 @@ Description: This is a patient registration form to collect information such as 
               <input type="text" id="user" name="user" placeholder="Enter username" 
                 minlength="5" maxlength="30" pattern="^[A-Z0-9a-z_]*$"
                 required>
+              <span id="username_check">
             </div>
           </tr>
           <tr>
@@ -253,6 +254,7 @@ Description: This is a patient registration form to collect information such as 
               placeholder="Please re-enter your password"
               required > 
             <input type="checkbox" onclick="myFunction()">Show Password
+            <span id="reenter_check">
           </tr>
           <tr>
             <td colspan="3">
