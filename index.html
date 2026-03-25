@@ -202,7 +202,26 @@ Description: This is a patient registration form to collect information such as 
               </div>
             </div>
           </tr>
-          
+          <label>Do you have insurance?</label>
+          <div id="insurance" title="Do you have insurance?">
+            <label><input type="radio" name="insurance" value="yes">Yes</label>
+            <label><input type="radio" name="insurance" value="no">No</label>
+          </div>
+          <div id="medicalHistory">
+            <label>Medical History (check all that apply): </label>
+            <div id="conditions" title="Select health conditions you have experienced">
+              <label><input type="checkbox"
+                       name="medical" value="cholesterol">High Cholesterol</label>
+              <label><input type="checkbox"
+                       name="medical" value="measles">Measles</label>
+              <label><input type="checkbox"
+                       name="medical" value="Covid19">Covid-19</label>
+              <label><input type="checkbox"
+                       name="medical" value="infection">Gum Infection"</label>
+              <label><input type="checkbox"
+                       name="medical" value="flu">Flu</label>
+            </div>
+            
           
      </body>
         <!-- Enter in Javascript -->
