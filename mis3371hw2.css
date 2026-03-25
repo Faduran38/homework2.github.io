@@ -1,1 +1,29 @@
-
+/*
+Program Name: mis3371hw2.css
+Author: Faviana A Duran 
+Date Created: March 20, 2026
+Date Last Edited: March 27, 2026
+Version: 1.0
+Description: This is a style sheet for the patient registration form
+*/
+body {
+  background-color: #92a8d1;
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+}
+h1 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+h2 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+a:visited {
+  color: red;
+}
+img {
+  display: block;
+  margin: auto;
+  width: 20%;
+}
