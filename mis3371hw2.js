@@ -8,3 +8,17 @@ function myFunction() {
   else {
     text ="Input valid";
   }
+function myFunction() {
+  var x = document.getElementById("pass");
+  if(x.type === "password") {
+    x.type = "text";}
+  else {
+    x.type = "password";
+  }
+function myFunction() {
+  var x = document.getElementById("ssn");
+  if(x.type === "password") {
+    x.type = "text";}
+  else {
+    x.type = "password";
+  }
