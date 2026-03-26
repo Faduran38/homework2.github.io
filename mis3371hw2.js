@@ -31,4 +31,9 @@ function myFunction() {
   }
 function checkemail() {
   let x = document.getElementById("email").value;
-  if (x 
+  if (x < 7) {
+    alert("Not enough characters");
+    return false;
+  }
+}
+  
