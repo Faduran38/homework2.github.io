@@ -36,4 +36,6 @@ function checkemail() {
     return false;
   }
 }
-  
+function checkaddress() {
+  let x = document.getElementById("adress").value;
+  if ( x = 
