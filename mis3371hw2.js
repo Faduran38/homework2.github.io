@@ -29,3 +29,6 @@ function myFunction() {
       return false;
     }
   }
+function checkemail() {
+  let x = document.getElementById("email").value;
+  if (x 
