@@ -37,5 +37,10 @@ function checkemail() {
   }
 }
 function checkaddress() {
-  let x = document.getElementById("adress").value;
-  if ( x = 
+  let x = document.getElementById("adress1").value;
+  if ( x == "") {
+    alert("Please enter in your address");
+    return false;}
+  else document.getElementById("address_check").innerHTML = "Fits parameters";
+}
+
