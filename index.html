@@ -166,7 +166,7 @@ Description: This is a patient registration form to collect information such as 
                 <option value="WY">Wyoming</option>
                 </select>
                 <label for="zip">Zipcode: </label>
-                <input type="text" pattern="[0-9]{10}" name="zip" placeholder="Zipcode"
+                <input type="text" pattern="[0-9]{5}" name="zip" placeholder="Zipcode"
                  minlength="5" maxlength="10" required >
               </td>
           </tr>
@@ -174,8 +174,8 @@ Description: This is a patient registration form to collect information such as 
            <div id="gender">
              <label for="gender">Gender: </label>
              <label for="male">Male</label>
-             <label for="female">Female</label>
              <input type="radio" name="gender" value="male" required>
+             <label for="female">Female</label>
              <input type="radio" name="gender" value="female" required>
            </div>
          </tr> 
