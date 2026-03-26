@@ -22,3 +22,10 @@ function myFunction() {
   else {
     x.type = "password";
   }
+  function checkfirstname() {
+   let x = document.getElementById("firstname").value;
+    if (x == "") {
+      alert("Incorrect input for name");
+      return false;
+    }
+  }
