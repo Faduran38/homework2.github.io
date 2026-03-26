@@ -22,25 +22,32 @@ function myFunction() {
   else {
     x.type = "password";
   }
-  function checkfirstname() {
+  function validatefirstname() {
    let x = document.getElementById("firstname").value;
     if (x == "") {
       alert("Incorrect input for name");
       return false;
     }
   }
-function checkemail() {
+function validateemail() {
   let x = document.getElementById("email").value;
   if (x < 7) {
     alert("Not enough characters");
     return false;
   }
 }
-function checkaddress() {
+function validateaddress() {
   let x = document.getElementById("adress1").value;
   if ( x == "") {
     alert("Please enter in your address");
     return false;}
   else document.getElementById("address_check").innerHTML = "Fits parameters";
 }
-
+function validatephone() {
+  let x = document.getElementById("phone").value;
+  if (x < 10) {
+    alert("Not enough characters");
+    return false;}
+  else document.getElementById("phone_check").innerHTML = "Fits parameters";
+}
+  
