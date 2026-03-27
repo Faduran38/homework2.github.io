@@ -50,4 +50,6 @@ function validatephone() {
     return false;}
   else document.getElementById("phone_check").innerHTML = "Fits parameters";
 }
+function validatepass() {
+  let x = document.getElementById("pass").value;
   
