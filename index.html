@@ -63,8 +63,7 @@ Description: This is a patient registration form to collect information such as 
                         minlength="1" maxlength="1"
                         pattern="[A-Za-z]{1,}"
                         name="middleinitial"
-                        placeholder="MI"
-                        required>
+                        placeholder="MI">
                       <li><label for="lastname">Last Name: </label></li>
                       <input type="text" size="30"
                         minlength="1" maxlength="30"
@@ -250,7 +249,7 @@ Description: This is a patient registration form to collect information such as 
           <tr>
             <div id="password">
               <label for="pass">Password: </label>
-              <input type="password" id="pass" name="pass" value="FakePSW" 
+              <input type="password" id="pass" name="pass" value="FakePSW" maxlength="30"
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}" placeholder="Please enter in a password"
                 required >
             </div>
